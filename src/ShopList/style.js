@@ -16,17 +16,13 @@ export const ContainerSection = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-top: 7rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 9rem;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  @media (max-width: 800px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  @media (max-width: 650px) {
+  @media (max-width: 750px) {
     grid-template-columns: 1fr 1fr;
   }
-
-  @media (max-width: 415px) {
+  @media (max-width: 510px) {
     grid-template-columns: 1fr;
   }
 `;

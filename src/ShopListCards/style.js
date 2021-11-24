@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  width: 80%;
+  min-width: 100px;
+  width: 100%;
   background: white;
   align-items: center;
   justify-content: center;
@@ -14,7 +15,7 @@ export const Container = styled.div`
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
   height: 100%;
   h1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 `;
 export const Button = styled.span`
@@ -32,7 +33,7 @@ export const Button = styled.span`
   transition: 0.3s;
   color: white;
   cursor: pointer;
-  max-width: 8rem;
+
   outline: none;
   :hover {
     background: #7856a020;
@@ -40,7 +41,16 @@ export const Button = styled.span`
   }
 `;
 
+export const ContainerTotalValue = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0.4rem 1rem;
+`;
+
 export const Img = styled.img`
-  width: 50%;
+  width: 100%;
   object-fit: cover;
 `;
