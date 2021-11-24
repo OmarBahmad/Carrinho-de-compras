@@ -26,7 +26,7 @@ const NavBar = ({ cart }) => {
             <Price>R$ {totalPrice.toFixed(2)}</Price>
           </ContainerTotalValue>
           <ContainerButtons>
-            <Button>limpar</Button>
+            {/* <Button>limpar</Button> */}
             <Button>CARRINHO</Button>
           </ContainerButtons>
         </ContainerActions>
