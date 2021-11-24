@@ -1,12 +1,13 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
 html,
 body {
   font-size: 16px;
   padding: 0;
   margin: 0;
-  @font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Regular.ttf");
-  }
+  font-family: 'Poppins', sans-serif;
+
 }
 
 a {
@@ -17,3 +18,4 @@ a {
 * {
   box-sizing: border-box;
 }
+`;
