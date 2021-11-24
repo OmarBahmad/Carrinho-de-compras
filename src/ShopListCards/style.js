@@ -10,12 +10,12 @@ export const Container = styled.div`
   box-sizing: border-box;
   flex-wrap: wrap;
   padding: 1.5rem;
-  margin: 1rem;
+
   border-radius: 0.75rem;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
   height: 100%;
   h1 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 `;
 export const Button = styled.span`

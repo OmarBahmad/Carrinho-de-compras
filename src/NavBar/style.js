@@ -27,51 +27,63 @@ export const ContainerActions = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 40%;
-  flex-wrap: wrap;
+  width: 60%;
+  flex-wrap: nowrap;
 `;
 export const ContainerTotalValue = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  width: 40%;
+  width: 60%;
   padding: 0 1rem;
 `;
 export const ContainerButtons = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  width: 60%;
+  width: 30%;
   flex-wrap: wrap;
 `;
 export const Total = styled.span`
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-weight: normal;
   width: 100%;
-  @media (max-width: 720px) {
-    font-size: 1rem;
+  @media (max-width: 940px) {
+    font-size: 1.5rem;
   }
-  @media (max-width: 575px) {
+  @media (max-width: 790px) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 670px) {
+    font-size: 0.9rem;
+  }
+  @media (max-width: 415px) {
     font-size: 0.7rem;
   }
-  @media (max-width: 430px) {
-    font-size: 0.5rem;
+  @media (max-width: 355px) {
+    font-size: 0.7rem;
   }
 `;
 export const Price = styled.span`
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: normal;
   font-weight: bold;
   width: 100%;
 
-  @media (max-width: 720px) {
+  @media (max-width: 940px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 790px) {
     font-size: 1.2rem;
   }
-  @media (max-width: 575px) {
+  @media (max-width: 670px) {
     font-size: 0.9rem;
   }
-  @media (max-width: 430px) {
+  @media (max-width: 580px) {
+    font-size: 0.7rem;
+  }
+  @media (max-width: 355px) {
     font-size: 0.7rem;
   }
 `;
@@ -86,6 +98,7 @@ export const Button = styled.span`
   background: #7856a0;
   border-radius: 0.75rem;
   font: inherit;
+  font-size: 1.3rem;
   width: 100%;
   transition: 0.3s;
   color: white;
@@ -95,5 +108,20 @@ export const Button = styled.span`
   :hover {
     background: #7856a020;
     color: #7856a0;
+  }
+  @media (max-width: 940px) {
+    font-size: 1.3rem;
+  }
+  @media (max-width: 790px) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 670px) {
+    font-size: 0.9rem;
+  }
+  @media (max-width: 580px) {
+    font-size: 0.7rem;
+  }
+  @media (max-width: 355px) {
+    font-size: 0.7rem;
   }
 `;
