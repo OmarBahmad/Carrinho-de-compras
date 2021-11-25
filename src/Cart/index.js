@@ -1,5 +1,6 @@
 import { useRouter } from "next/dist/client/router";
 import React, { useContext } from "react";
+import swal from "sweetalert";
 import { CartContext } from "../../contexts/CartContext";
 import CartItems from "../CartItems";
 
@@ -49,8 +50,25 @@ const Cart = () => {
         </FillContainer>
         <Button
           onClick={() => {
-            router.push("/");
-            handleClearCart();
+            if (cart.length === 0) {
+              swal({
+                text: "Você não selecionou nenhuma das nossas deliciosas Trufas!",
+                icon: "warning",
+                title: "Volte para a loja!",
+              }).then(() => {
+                handleClearCart();
+                router.push("/");
+              });
+            } else {
+              swal({
+                text: " Compra efetuada com sucesso! \n  \n  Iremos esvaziar o seu carrinho para que você possa saborear mais!",
+                icon: "success",
+                title: "Parabéns!",
+              }).then(() => {
+                handleClearCart();
+                router.push("/");
+              });
+            }
           }}
         >
           Finalizar Compra
