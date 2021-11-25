@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Projeto Carrinho de Compras.
 
-## Getting Started
+Para iniciar o projeto em sua máquina, certifique-se de ter o Yarn ou NPM instalado.
 
-First, run the development server:
+Após instalar os componentes necessários, digite o comando "yarn dev" para iniciar o servidor no endereço padrão (http://localhost:3000).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Este site também está hospedado na Vercel sobre os dominios:
+"https://carrinho-de-compras-omarbahmad.vercel.app/"
+ou
+"https://carrinho-de-compras-seven.vercel.app/".
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Testado e responsivo, ele foi criado em Next.Js, utilizando apenas libs nativas do framework, com exceção do "sweetalert" e do "Styled Components" utilizados para renderizar o css da aplicação. Predominantemente em Flexbox, foi usado também o sistema de Grid em um lugar específico para manter o padrão da responsividade. Os dados contidos neste projeto foi retirado de uma "Api Fake" criada internamente conforme o json enviado.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Metas:
+ - Contactar com a API "real" e poder retirar os dados diretamente do servidor.
+ - Criar portal com Login e cadastro de clientes, podendo ordenar a quantidade de trufas vendidas e quantidade de clientes, podendo usar estes dados especificos para campanhas de marketing e vendas.
+ - Consumir API Externa (GoogleMaps, Correios, ....) para poder melhorar o sistema de frete e exibir a veracidade do "Frete grátis".
+ - Desenvolver o equivalente em versão Mobile.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Fotos do projeto:
+![image](https://user-images.githubusercontent.com/78921702/143468726-e4fe43e3-a5c3-4d8f-91db-104935d6a926.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![image](https://user-images.githubusercontent.com/78921702/143468941-6e1323f4-315f-4225-aa8f-0f45ade5e191.png)
 
-## Learn More
+![image](https://user-images.githubusercontent.com/78921702/143468997-7da51614-c138-4138-b3df-4d9aeeefe326.png)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![image](https://user-images.githubusercontent.com/78921702/143469031-86257058-f61d-49d7-bcdb-b6b7c81bd0fb.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
