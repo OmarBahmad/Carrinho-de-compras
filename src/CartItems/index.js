@@ -5,8 +5,8 @@ import {
   Container,
   Button,
   ContainerCart,
-  ContainerTotalValue,
-  Total,
+  ContainerNameValue,
+  Name,
   Price,
   Img,
 } from "./style";
@@ -17,10 +17,10 @@ const CartItems = ({ imageUrl, name, price, index }) => {
     <Container>
       <ContainerCart>
         <Img src={imageUrl} title={name} />
-        <ContainerTotalValue>
-          <Total>{name}</Total>
+        <ContainerNameValue>
+          <Name>{name}</Name>
           <Price> R${parseFloat(price / 100).toFixed(2)}</Price>
-        </ContainerTotalValue>
+        </ContainerNameValue>
         <Button onClick={() => handleRemoveItemFromCart(index)}>REMOVER</Button>
       </ContainerCart>
     </Container>

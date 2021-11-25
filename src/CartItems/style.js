@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  width: 90%;
+  width: 85%;
   background: white;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,7 @@ export const ContainerCart = styled.div`
   box-sizing: border-box;
   width: 100%;
 `;
-export const ContainerTotalValue = styled.div`
+export const ContainerNameValue = styled.div`
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
@@ -30,15 +30,27 @@ export const ContainerTotalValue = styled.div`
   width: 100%;
   gap: 1rem;
 `;
-export const Total = styled.span`
+export const Name = styled.span`
   font-size: 1rem;
   font-weight: bold;
   width: 100%;
+  @media (max-width: 700px) {
+    font-size: 0.7rem;
+  }
+  @media (max-width: 400px) {
+    font-size: 0.5rem;
+  }
 `;
 export const Price = styled.span`
   font-size: 1.2rem;
   font-weight: bold;
   width: 100%;
+  @media (max-width: 700px) {
+    font-size: 0.9rem;
+  }
+  @media (max-width: 400px) {
+    font-size: 0.7rem;
+  }
 `;
 export const Button = styled.button`
   padding: 0 2rem;
@@ -54,15 +66,20 @@ export const Button = styled.button`
   box-sizing: border-box;
   font: inherit;
   font-weight: bold;
-  width: 100%;
+  width: 20%;
   transition: 0.3s;
   color: #7b56a0;
   cursor: pointer;
-  max-width: 8rem;
   outline: none;
   :hover {
     background: #7b56a0;
     color: white;
+  }
+  @media (max-width: 700px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 450px) {
+    font-size: 0.6rem;
   }
 `;
 export const Img = styled.img`

@@ -27,6 +27,7 @@ export const Logo = styled.h2`
 `;
 export const Img = styled.img`
   padding-right: 1rem;
+  cursor: pointer;
 `;
 export const ContainerButtons = styled.div`
   display: block;
