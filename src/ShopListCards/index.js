@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext";
 
 import { Container, Button, Img, ContainerTotalValue } from "./style";
 
-const ShopListCards = ({ imageUrl, name, price, handleAddItemToCart }) => {
+const ShopListCards = ({ imageUrl, name, price }) => {
+  const { handleAddItemToCart } = useContext(CartContext);
   return (
     <Container>
       <Img src={imageUrl} title={name} />

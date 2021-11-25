@@ -5,7 +5,7 @@ import { Container, ContainerSection } from "./style";
 
 import { data } from "../../database";
 
-const ShopList = ({ handleAddItemToCart }) => {
+const ShopList = () => {
   return (
     <Container>
       <ContainerSection>
@@ -15,7 +15,6 @@ const ShopList = ({ handleAddItemToCart }) => {
             imageUrl={data.imageUrl}
             name={data.name}
             price={data.price}
-            handleAddItemToCart={handleAddItemToCart}
           />
         ))}
       </ContainerSection>

@@ -1,4 +1,6 @@
-import React from "react";
+import { useRouter } from "next/dist/client/router";
+import React, { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext";
 
 import {
   Container,
@@ -12,8 +14,11 @@ import {
   Button,
 } from "./style";
 
-const NavBar = ({ cart }) => {
+const NavBar = () => {
+  const { cart } = useContext(CartContext);
   const totalPrice = cart.reduce((acc, actual) => acc + actual.price / 100, 0);
+  const router = useRouter();
+
   return (
     <Container>
       <Nav>
@@ -27,7 +32,13 @@ const NavBar = ({ cart }) => {
           </ContainerTotalValue>
           <ContainerButtons>
             {/* <Button>limpar</Button> */}
-            <Button>CARRINHO</Button>
+            <Button
+              onClick={() => {
+                router.push("/cart");
+              }}
+            >
+              CARRINHO
+            </Button>
           </ContainerButtons>
         </ContainerActions>
       </Nav>

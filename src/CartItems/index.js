@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext";
 
 import {
   Container,
@@ -9,13 +10,8 @@ import {
   Img,
 } from "./style";
 
-const CartItems = ({
-  imageUrl,
-  name,
-  price,
-  index,
-  handleRemoveItemFromCart,
-}) => {
+const CartItems = ({ imageUrl, name, price, index }) => {
+  const { handleRemoveItemFromCart } = useContext(CartContext);
   return (
     <Container>
       <ContainerTotalValue>

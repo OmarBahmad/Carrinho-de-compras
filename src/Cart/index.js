@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext";
 import CartItems from "../CartItems";
 
 import { Container, ContainerCard } from "./style";
 
-const Cart = ({ cart, handleRemoveItemFromCart }) => {
+const Cart = () => {
+  const { cart } = useContext(CartContext);
   return (
     <Container>
       <ContainerCard>
@@ -14,7 +16,6 @@ const Cart = ({ cart, handleRemoveItemFromCart }) => {
             imageUrl={data.imageUrl}
             name={data.name}
             price={data.price}
-            handleRemoveItemFromCart={handleRemoveItemFromCart}
           />
         ))}
       </ContainerCard>
