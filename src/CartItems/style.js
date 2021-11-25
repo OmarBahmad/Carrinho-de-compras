@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
   width: 90%;
   background: white;
   justify-content: space-between;
@@ -12,31 +11,38 @@ export const Container = styled.div`
   margin: 1rem;
   border-radius: 0.75rem;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
-  height: 100%;
+  height: 12rem;
+  flex-wrap: nowrap;
 `;
-
-export const ContainerTotalValue = styled.div`
+export const ContainerCart = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+  box-sizing: border-box;
   width: 100%;
-  margin: 0.4rem 1rem;
+`;
+export const ContainerTotalValue = styled.div`
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  gap: 1rem;
 `;
 export const Total = styled.span`
-  font-size: 1.2rem;
-  font-weight: normal;
-  width: 100%;
-`;
-export const Price = styled.span`
-  font-size: 1.5rem;
-  font-weight: normal;
+  font-size: 1rem;
   font-weight: bold;
   width: 100%;
 `;
-export const Button = styled.span`
+export const Price = styled.span`
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100%;
+`;
+export const Button = styled.button`
   padding: 0 2rem;
-  margin: 0.2rem 0.2rem 0.2rem 0.6rem;
+  margin: auto;
   border: none;
   height: 3rem;
   display: flex;
@@ -45,6 +51,7 @@ export const Button = styled.span`
   background: transparent;
   border: 3px solid #7b56a0;
   border-radius: 0.75rem;
+  box-sizing: border-box;
   font: inherit;
   font-weight: bold;
   width: 100%;
@@ -59,6 +66,7 @@ export const Button = styled.span`
   }
 `;
 export const Img = styled.img`
-  width: 50%;
-  object-fit: cover;
+  width: 30%;
+  box-sizing: border-box;
+  margin: 0.5rem 1rem 0.5rem 0;
 `;
