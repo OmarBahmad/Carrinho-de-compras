@@ -34,7 +34,7 @@ const NavBar = () => {
             {/* <Button>limpar</Button> */}
             <Button
               onClick={() => {
-                router.push("/cart");
+                router.push("/cartlist");
               }}
             >
               CARRINHO

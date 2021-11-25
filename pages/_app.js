@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
             rel="stylesheet"
           />
         </Head>
-        <ShoppingCart />
+        <Component {...pageProps} />
       </CartProvider>
     </>
   );
