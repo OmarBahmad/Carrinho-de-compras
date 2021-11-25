@@ -115,4 +115,13 @@ export const Button = styled.button`
     background: #3b74f220;
     color: #3b74f2;
   }
+  @media (max-width: 700px) {
+    font-size: 25px;
+  }
+  @media (max-width: 450px) {
+    font-size: 20px;
+  }
+  @media (max-width: 350px) {
+    font-size: 16px;
+  }
 `;
