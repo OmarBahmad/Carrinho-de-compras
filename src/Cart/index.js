@@ -1,3 +1,4 @@
+import { useRouter } from "next/dist/client/router";
 import React, { useContext } from "react";
 import { CartContext } from "../../contexts/CartContext";
 import CartItems from "../CartItems";
@@ -14,8 +15,10 @@ import {
 } from "./style";
 
 const Cart = () => {
-  const { cart } = useContext(CartContext);
+  const router = useRouter();
+  const { cart, handleClearCart } = useContext(CartContext);
   const totalPrice = cart.reduce((acc, actual) => acc + actual.price / 100, 0);
+
   return (
     <Container>
       <BoxContainer>
@@ -44,7 +47,14 @@ const Cart = () => {
             </ContainerFrete>
           )}
         </FillContainer>
-        <Button>Finalizar Compra</Button>
+        <Button
+          onClick={() => {
+            router.push("/");
+            handleClearCart();
+          }}
+        >
+          Finalizar Compra
+        </Button>
       </BoxContainer>
     </Container>
   );

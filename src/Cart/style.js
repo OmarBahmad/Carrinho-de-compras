@@ -98,6 +98,7 @@ export const Button = styled.button`
   border-radius: 0.75rem;
   box-sizing: border-box;
   font: inherit;
+  font-size: 25px;
   font-weight: bold;
   width: 85%;
   transition: 0.3s;
