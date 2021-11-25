@@ -18,6 +18,9 @@ Metas:
  - Desenvolver o equivalente em versão Mobile.
 
 Fotos do projeto:
+
+
+
 ![image](https://user-images.githubusercontent.com/78921702/143468726-e4fe43e3-a5c3-4d8f-91db-104935d6a926.png)
 
 ![image](https://user-images.githubusercontent.com/78921702/143468941-6e1323f4-315f-4225-aa8f-0f45ade5e191.png)
