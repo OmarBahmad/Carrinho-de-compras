@@ -42,7 +42,7 @@ export const ContainerCard = styled.div`
   flex-direction: column;
   padding: 0;
   max-width: 900px;
-  height: 580px;
+  height: 500px;
   overflow-y: scroll;
   ::-webkit-scrollbar {
     width: 18px;
@@ -85,6 +85,12 @@ export const ContainerFrete = styled.div`
   font-weight: bold;
   font-size: 25px;
   border-radius: 50px;
+  @media (max-width: 700px) {
+    font-size: 21px;
+  }
+  @media (max-width: 450px) {
+    font-size: 15px;
+  }
 `;
 export const Button = styled.button`
   padding: 0 2rem;
